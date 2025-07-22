@@ -19,8 +19,13 @@ jobs:
       # Checkout the code as the first step.
       - checkout
       - run:
-          name: "Say hello"
-          command: "echo Hello, World!"
+          name: "Say hello, Palak!"
+          command: "echo Hello, My World!"
+say-bye:
+  steps:
+    run:
+      name: "Bye Bye"
+      command: "echo Bye, My World!"
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/workflows/ & https://circleci.com/docs/configuration-reference/#workflows
@@ -29,3 +34,4 @@ workflows:
     # Inside the workflow, you define the jobs you want to run.
     jobs:
       - say-hello
+      - say-bye
