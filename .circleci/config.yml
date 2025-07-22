@@ -21,11 +21,11 @@ jobs:
       - run:
           name: "Say hello, Palak!"
           command: "echo Hello, My World!"
-say-bye:
-  steps:
-    run:
-      name: "Bye Bye"
-      command: "echo Bye, My World!"
+  say-bye:
+    steps:
+      run:
+        name: "Bye Bye"
+        command: "echo Bye, My World!"
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/workflows/ & https://circleci.com/docs/configuration-reference/#workflows
