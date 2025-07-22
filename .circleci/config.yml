@@ -22,6 +22,8 @@ jobs:
           name: "Say hello, Palak!"
           command: "echo Hello, My World!"
   say-bye:
+    docker:
+      - image: cimg/base:current
     steps:
       - checkout
       - run:
